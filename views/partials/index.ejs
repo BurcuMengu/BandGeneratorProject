@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Generator Project</title>
+</head>
+
+<body>
+
+    <%- include("partials/header.ejs") %>
+
+    <%  if (locals.adjective && locals.noun) { %>
+    <h1>
+        <%= adjective %>
+        <%= noun %>
+    </h1>
+    <%  }  else   { %>
+    <h1>Welcome to the Band Generator 🤟</h1>
+    <%  } %>
+
+
+    <form action="/submit" method="post">
+        <input type="submit" value="Generate Name">
+    </form>
+
+
+    <%- include("partials/footer.ejs") %>
+    
+</body>
+
+</html>
