@@ -21,7 +21,7 @@ main {
 h1 {
     font-size: 3.5rem;
 }
-  
+
 input {
     appearance: none;
     -webkit-appearance: none;
@@ -31,7 +31,7 @@ input {
     padding: 1rem;
     color: white;
     cursor: pointer;
-}
+} 
   
 footer {
     position: absolute;
